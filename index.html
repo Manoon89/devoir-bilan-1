@@ -10,54 +10,169 @@
 <body>
     
     <header>
-        <img src="#" alt="photo de prenom nom">
-        <h1>Prénom Nom</h1>
-            <p>
-                Développeuse Web et Web Mobile
+
+        <img src="./assets/images/photo_manon_lagniel.jpg" alt="photo de manon lagniel">
+        <h1>Manon Lagniel</h1>
+
+            <strong>Développeuse Web et Web Mobile</strong>
+            <address>
                 <a href="mailto:Mail"><img src="./assets/icons/envelope-solid.svg" alt="email icon"> Mail</a>
                 <a href="https://www.google.fr/maps/@45.9136584,5.7146322,5.75z?entry=ttu&g_ep=EgoyMDI1MDEyMi4wIKXMDSoASAFQAw%3D%3D"><img src="./assets/icons/house-solid.svg" alt="adress icon"> Adresse</a>
                 <a href="tel:0600000000"><img src="./assets/icons/phone-solid.svg" alt="phone icon"> Téléphone</a>
-                <span><img src="./assets/icons/car-solid.svg" alt="car icon"> Permis B</span>
-            </p>
+                <img src="./assets/icons/car-solid.svg" alt="car icon"> Permis B
+            </address>
+ 
     </header>
 
     <body>
+        <!--Balise section dans balise aside pour répondre aux recommandations des titres pour les sections.-->
+        <aside>
 
-        <div id="bloc-1">
             <section>
                 <h2>Compétences</h2>
+                <dl>
+                    <dt><strong>HTML</strong></dt>
+                    <dd>
+                        <img src="./assets/icons/star-solid.svg" alt="star-solid">
+                        <img src="./assets/icons/star-solid.svg" alt="star-solid">
+                        <img src="./assets/icons/star-solid.svg" alt="star-solid">
+                        <img src="./assets/icons/star-regular.svg" alt="star-regular">
+                        <img src="./assets/icons/star-regular.svg" alt="star-regular">
+                    </dd>
+                    <dt><strong>CSS</strong></dt>
+                    <dd>
+                        <img src="./assets/icons/star-solid.svg" alt="star-solid">
+                        <img src="./assets/icons/star-solid.svg" alt="star-solid">
+                        <img src="./assets/icons/star-solid.svg" alt="star-solid">
+                        <img src="./assets/icons/star-regular.svg" alt="star-regular">
+                        <img src="./assets/icons/star-regular.svg" alt="star-regular">
+                    </dd>
+                    <!--pas de balise em ou strong car pas de compétences dans ces domaines. A changer + tard.-->
+                    <dt>Javascript</dt>
+                    <dd>
+                        <img src="./assets/icons/star-regular.svg" alt="star-regular">
+                        <img src="./assets/icons/star-regular.svg" alt="star-regular">
+                        <img src="./assets/icons/star-regular.svg" alt="star-regular">
+                        <img src="./assets/icons/star-regular.svg" alt="star-regular">
+                        <img src="./assets/icons/star-regular.svg" alt="star-regular">
+                    </dd>
+                    <dt>PHP</dt>
+                    <dd>
+                        <img src="./assets/icons/star-regular.svg" alt="star-regular">
+                        <img src="./assets/icons/star-regular.svg" alt="star-regular">
+                        <img src="./assets/icons/star-regular.svg" alt="star-regular">
+                        <img src="./assets/icons/star-regular.svg" alt="star-regular">
+                        <img src="./assets/icons/star-regular.svg" alt="star-regular">
+                    </dd>
+                </dl>
             </section>
+
             <section>
                 <h2>Langues</h2>
+                <dl>
+                    <dt>Français</dt>
+                    <dd>Langue maternelle</dd>
+                    <dt>Anglais</dt>
+                    <dd>C1</dd>
+                    <dt>Russe</dt>
+                    <dd>Notions</dd>
+                </dl>    
             </section>
+
             <section>
                 <h2>Qualités</h2>
+                <ul>
+                    <li>Rigueur</li>
+                    <li>Curiosité</li>
+                    <li>Esprit d'équipe</li>
+                    <li>Autonomie</li>
+                </ul>
             </section>
+
             <section>
                 <h2>Centres d'intérêt</h2>
+                <ul>
+                    <li>Chiens (BP Educateur Canin)</li>
+                    <li>Cuisine</li>
+                </ul>
             </section>
-        </div>
+        </aside>
 
-        <div id="bloc-2">
+        <!--idem que pour la balise aside-->
+        <article>
             <section>
                 <h2>Profil</h2>
+                <p>
+                Après plus de 10 ans en <em>gestion de payes</em>/RH et comptabilité, où j'ai pu commencer à programmer en <strong>VBA</strong>,
+                je cherche à me reconvertir en <strong>développement informatique</strong>. 
+                Je commence une formation <em>Développeur Web & Web Mobile</em> jusqu'en avril 2025. 
+                </p>
             </section>
+
             <section>
                 <h2>Formations</h2>
+                <div class="trainings-experiences">
+                    <em>TP Développeuse Web et Web Mobile</em>
+                    <time datetime="2025">2025</time>
+                    <small>Centre Européen de Formation</small>
+                </div>
+                <div class="trainings-experiences">
+                    <em>Licence Pro Gestion des Ressources Humaines</em>
+                    <time datetime="2010">2010</time>
+                    <small>IUT Paris Descartes</small>
+                </div>
+                <div class="trainings-experiences">
+                    <em>DUT Gestion des Entreprises et Administrations</em>
+                    <time datetime="2009">2009</time>
+                    <small>IUT Paris Descartes</small>
+                </div>
             </section>
+
+            <!--Volontairement non mise car non pertinent sur mon CV
             <section>
                 <h2>Stages</h2>
-            </section>
+            </section>-->
+
             <section>
-                <h2>Expérience professionnelle</h2>
+                <h2>Expériences professionnelles</h2>
+                <div class="trainings-experiences">
+                    <em>Responsable RH</em>
+                    <p><time datetime="2019">2019</time>-<time datetime="2024"></time>2024</p>
+                    <small>Abeilles Services & Bien Chez Soi 30</small>
+                </div>
+                <div class="trainings-experiences">
+                    <em>Assistante comptable</em>
+                    <p><time datetime="2018">2018</time>-<time datetime="2019"></time>2019</p>
+                    <small>Bourrie SAS</small>
+                </div>
+                <div class="trainings-experiences">
+                    <em>Comptable</em>
+                    <p><time datetime="2017">2017</time>-<time datetime="2018"></time>2018</p>
+                    <small>MAS des Sources</small>
+                </div>
+                <div class="trainings-experiences">
+                    <em>Chef d'équipe</em>
+                    <p><time datetime="2015">2015</time>-<time datetime="2017"></time>2017</p>
+                    <small>La SPA</small>
+                </div>
+                <div class="trainings-experiences">
+                    <em>Responsable Paie ADP</em>
+                    <p><time datetime="2011">2011</time>-<time datetime="2015"></time>2015</p>
+                    <small>Groupe Financière GOA</small>
+                </div>
+                <div class="trainings-experiences">
+                    <em>Gestionnaire RH</em>
+                    <p><time datetime="2009">2009</time>-<time datetime="2011"></time>2011</p>
+                    <small>Micros Fidelio France</small>
+                </div>
             </section>
-        </div>
+        </article>
 
     </body>
 
     <footer>
-        <a href="#"><img src="./assets/icons/linkedin-brands-solid.svg" alt="linkedin icon"></a>
-        <a href="#"><img src="./assets/icons/github-brands-solid.svg" alt="github icon"></a>
+        <a href="https://fr.linkedin.com/in/manon-lagniel-45284137"><img src="./assets/icons/linkedin-brands-solid.svg" alt="linkedin icon"></a>
+        <a href="https://github.com/Manoon89"><img src="./assets/icons/github-brands-solid.svg" alt="github icon"></a>
         <p>Mise à jour le : <time datetime="2025-01-27">27/01/2025</time></p>
     </footer>
 
