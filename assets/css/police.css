@@ -72,6 +72,8 @@ header, footer, address, a{
     font-style: normal;
 }
 
+/*prochaines propriétés à changer si l'utilisation de font-family n'est pas justifiée*/
+
 .address_content{
     font-family: "Raleway-Light";
 }
@@ -101,6 +103,8 @@ dt{
 .trainings-experiences__location, footer p{
     font-size: 0.8em;
 }
+
+/*idem + haut*/
 
 .trainings-experiences__location{
     font-family: "Raleway-MediumItalic";
