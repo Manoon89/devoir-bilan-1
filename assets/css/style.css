@@ -61,7 +61,8 @@ header strong, h2{
     justify-content: flex-start;
 }
 
-/*pas sure que le 0.85em soit vraiment pris en compte, peut-être 0.8em aurait été + propre*/
+/*pas sure que le 0.85em soit bien pris en compte, peut-être 0.8em aurait été + propre*/
+
 .address_content a, .address_content p{
     font-size: 0.85em;
 }
