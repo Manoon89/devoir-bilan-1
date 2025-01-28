@@ -154,7 +154,7 @@ dd{
     align-self: start;
 }
 
-h2, .training-experiences__date, ul li::marker{
+h2, .trainings-experiences__date, ul li::marker{
     color: #17abb3;
 }
 
