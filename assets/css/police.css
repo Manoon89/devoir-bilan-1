@@ -1,0 +1,111 @@
+/*Je ne savais pas comment importer les différents types de police (Italic, Bold, etc). 
+J'ai fait plusieurs @font-face avec des font-family différents mais je ne sais pas si c'est bon. */
+
+@font-face{
+    font-family: "Raleway";
+    src: url(../fonts/Raleway-Regular.ttf);
+    src: url(../fonts/Raleway-Regular.woff);
+}
+
+@font-face{
+    font-family: "Raleway-Bold";
+    src: url(../fonts/Raleway-Bold.ttf);
+    src: url(../fonts/Raleway-Bold.woff);
+}
+
+@font-face{
+    font-family: "Raleway-LightItalic";
+    src: url(../fonts/Raleway-LightItalic.ttf);
+    src: url(../fonts/Raleway-LightItalic.woff);
+}
+
+@font-face{
+    font-family: "Raleway-Light";
+    src: url(../fonts/Raleway-Light.ttf);
+    src: url(../fonts/Raleway-Light.woff);
+}
+
+@font-face{
+    font-family: "Raleway-MediumItalic";
+    src: url(../fonts/Raleway-MediumItalic.ttf);
+}
+
+/*Je suis finalement passée par @font-face car mon import de Google Fonts ne fonctionnait pas. 
+Je le laisse en commentaire pour pouvoir trouver d'où vient le souci : 
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*/
+
+@font-face{
+    font-family: "Lato";
+    src: url(../fonts/Lato-Regular.ttf);
+    src: url(../fonts/Lato-Regular.woff);
+}
+
+body{
+    font-family: "Raleway", serif;
+}
+
+h1, h2{
+    font-family: "Lato", serif;
+}
+
+h1, header strong, #profile{
+    font-weight: 600;
+}
+
+h1{
+    font-size: 2.8em;
+}
+
+h2{
+    font-weight: 500;
+}
+
+header strong{
+    font-size: 1.3em;
+}
+
+header, footer, address, a{
+    text-decoration: none;
+    font-style: normal;
+}
+
+.address_content{
+    font-family: "Raleway-Light";
+}
+
+dt, .trainings-experiences__title{
+    font-family: "Raleway-Bold";
+}
+
+dt{
+    font-size: 0.9em;
+}
+
+#profile{
+    text-indent: 20px ;
+    text-align: justify;
+}
+
+#profile em, #profile strong{
+    font-weight: inherit;
+    font-style: inherit;
+}
+
+.trainings-experiences__title{
+    font-style: normal;
+}
+
+.trainings-experiences__location, footer p{
+    font-size: 0.8em;
+}
+
+.trainings-experiences__location{
+    font-family: "Raleway-MediumItalic";
+}
+
+footer p{
+    font-family: "Raleway-LightItalic";
+}

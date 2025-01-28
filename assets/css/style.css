@@ -1,48 +1,96 @@
 *{
     box-sizing: border-box;
-}
-
-@font-face{
-    font-family: "Lato";
-    @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
-header img{
-    width: 8%;
-    border-radius: 50%;
-    border: solid 5px #ffffff;
-}
-
-address img{
-    width: 1%;
-    border-radius: initial;
-    border: initial;
-}
-
-body, header, main, footer{
     margin: 0 auto;
 }
 
 body{
-    background-color: #f5f5f5;
-    font-family: "Raleway", serif;
+    width: 1160px;
 }
 
-h1, h2{
-    font-family: "Lato", serif;
+header, main{
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+}
+
+header{
+    height: 200px;
+    grid-template-rows: 200px;
+    justify-items: center ;
+    align-items: center;
+}
+
+div, .address_content, address, dl, dd, .trainings-experiences, footer, footer div{
+    display: flex;
+}
+
+div, footer{
+    flex-direction: column;
+}
+
+dl, dd, .trainings-experiences, footer div{
+    flex-direction: row;
+}
+
+div, footer{
+    justify-content: center;
+}
+
+#profile-photo{
+    height: 130px;
+    border-radius: 50%;
+    border: solid 5px #ffffff;
+}
+
+#profile-photo:hover{
+    cursor: zoom-in;
+}
+
+body{
+    background-color: #f5f5f5;
+}
+
+header strong{
+    margin: 10px;
+}
+
+header strong, h2{
+    margin-bottom: 20px;
+}
+
+.address_content, address{
+    justify-content: flex-start;
+}
+
+.address_content a, .address_content p{
+    font-size: 0.85em;
+}
+
+address{
+    width: 240px;
+}
+
+.address_content{
+    padding-bottom: 10px;
+}
+
+.address_content img{
+    width: 10%;
+}
+
+div img{
+    width: 20%;
+    border-radius: initial;
+    border: initial;
+    margin-right: 2px;
+    margin-left: 0;
+}
+
+header, footer, address, a, address img{
+    color: #ffffff;
 }
 
 header, footer, address, a{
     background-color: #17abb3;
-    color: #ffffff;
-    text-decoration: none;
-    font-style: normal;
-}
-
-address img{
-    color: #ffffff;
 }
 
 main{
@@ -50,7 +98,15 @@ main{
 }
 
 h2{
-    color: #17abb3;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(51, 51, 51, 10%) ;
+}
+
+article, aside{
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 article{
@@ -58,21 +114,87 @@ article{
 }
 
 aside{
-    background: #e3e3e3;
+    background-color: #e3e3e3;
 }
 
-dd img{
-    width: 1%;
+dt{
+    width: 30%;
+}
+
+dd{
+    width: 70%;
+    margin-bottom: 15px;
+}
+
+dd{
+    justify-content: flex-end;
+}
+
+.trainings-experiences:hover{
+    border-left: 3px solid #17abb3;
+    padding-left: 5px;
+    background-color: #e3e3e3;
+}
+
+.trainings-experiences, dl, address{
+    flex-wrap: wrap;
+}
+
+.trainings-experiences__date, .trainings-experiences__title, .address_content{
+    width: 50%;
+}
+
+.trainings-experiences__location{
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.trainings-experiences__title{
+    padding-top: 10px;
+    align-self: start;
+}
+
+h2, .training-experiences__date, ul li::marker{
+    color: #17abb3;
+}
+
+.trainings-experiences__date{
+    text-align: right;
+}
+
+.trainings-experiences__location, .address_content a, .address_content p{
+    margin: 0;
+}
+
+.stars{
+    width: 8%;
+    margin: 1px;
 }
 
 ul{
     list-style: square;
+    padding-left: 18px;
 }
 
-ul li::marker{
-    color: #17abb3;
+footer{
+    height: 80px;
+}
+
+footer div{
+    justify-content: space-around;
+}
+
+footer div a{
+    width: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
 }
 
 footer img{
-    width: 1.5%;
+    width: 150%;
+}
+
+footer img:hover{
+    opacity: 0.6;
 }
