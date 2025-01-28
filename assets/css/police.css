@@ -51,9 +51,12 @@ h1, h2{
     font-family: "Lato", serif;
 }
 
+h1, header strong, #profile{
+    font-weight: 600;
+}
+
 h1{
     font-size: 2.8em;
-    font-weight: 600;
 }
 
 h2{
@@ -62,8 +65,6 @@ h2{
 
 header strong{
     font-size: 1.3em;
-    font-family: "Raleway";
-    font-weight: 600;
 }
 
 header, footer, address, a{
@@ -75,15 +76,17 @@ header, footer, address, a{
     font-family: "Raleway-Light";
 }
 
-dt{
+dt, .trainings-experiences__title{
     font-family: "Raleway-Bold";
+}
+
+dt{
     font-size: 0.9em;
 }
 
 #profile{
     text-indent: 20px ;
     text-align: justify;
-    font-weight: 600;
 }
 
 #profile em, #profile strong{
@@ -92,16 +95,17 @@ dt{
 }
 
 .trainings-experiences__title{
-    font-family: "Raleway-Bold";
     font-style: normal;
 }
 
-.trainings-experiences__location{
+.trainings-experiences__location, footer p{
     font-size: 0.8em;
+}
+
+.trainings-experiences__location{
     font-family: "Raleway-MediumItalic";
 }
 
 footer p{
     font-family: "Raleway-LightItalic";
-    font-size: 0.8em;
 }

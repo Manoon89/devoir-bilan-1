@@ -7,18 +7,31 @@ body{
     width: 1160px;
 }
 
+header, main{
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+}
+
 header{
     height: 200px;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
     grid-template-rows: 200px;
     justify-items: center ;
     align-items: center;
 }
 
-div{
+div, .address_content, address, dl, dd, .trainings-experiences, footer, footer div{
     display: flex;
+}
+
+div, footer{
     flex-direction: column;
+}
+
+dl, dd, .trainings-experiences, footer div{
+    flex-direction: row;
+}
+
+div, footer{
     justify-content: center;
 }
 
@@ -34,25 +47,22 @@ body{
 
 header strong{
     margin: 10px;
+}
+
+header strong, h2{
     margin-bottom: 20px;
 }
 
-.address_content{
-    display: flex;
+.address_content, address{
     justify-content: flex-start;
-    width: 50%;
 }
 
 .address_content a, .address_content p{
-    margin: 0px;
     font-size: 0.85em;
 }
 
 address{
     width: 240px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
 }
 
 div img{
@@ -63,26 +73,21 @@ div img{
     margin-left: 0;
 }
 
-header, footer, address, a{
-    background-color: #17abb3;
+header, footer, address, a, address img{
     color: #ffffff;
 }
 
-address img{
-    color: #ffffff;
+header, footer, address, a{
+    background-color: #17abb3;
 }
 
 main{
     color: #333333;
-    display: grid;
-    grid-template-columns: 2fr 5fr;
 }
 
 h2{
-    color: #17abb3;
     padding-top: 20px;
     padding-bottom: 10px;
-    margin-bottom: 20px;
     border-bottom: 2px solid rgba(51, 51, 51, 10%) ;
 }
 
@@ -97,17 +102,11 @@ article{
 }
 
 aside{
-    background: #e3e3e3;
+    background-color: #e3e3e3;
 }
 
 dt{
     width: 30%;
-}
-
-dl{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 
 dd{
@@ -116,18 +115,14 @@ dd{
 }
 
 dd{
-    display: flex;
-    flex-direction: row;
     justify-content: flex-end;
 }
 
-.trainings-experiences{
-    display: flex;
-    flex-direction: row ;
+.trainings-experiences, dl, address{
     flex-wrap: wrap;
 }
 
-.trainings-experiences__date, .trainings-experiences__title{
+.trainings-experiences__date, .trainings-experiences__title, .address_content{
     width: 50%;
 }
 
@@ -140,12 +135,15 @@ dd{
     align-self: start;
 }
 
-.trainings-experiences__date{
+h2, .training-experiences__date, ul li::marker{
     color: #17abb3;
+}
+
+.trainings-experiences__date{
     text-align: right;
 }
 
-.trainings-experiences__location{
+.trainings-experiences__location, .address_content a, .address_content p{
     margin: 0;
 }
 
@@ -159,20 +157,11 @@ ul{
     padding-left: 18px;
 }
 
-ul li::marker{
-    color: #17abb3;
-}
-
 footer{
     height: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 footer div{
-    display: flex;
-    flex-direction: row;
     justify-content: space-around;
 }
 
